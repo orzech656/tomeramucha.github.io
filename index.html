@@ -3,12 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Historia Premier League</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
 </head>
 <body>
-    <p class="p1">elo elo</p>
-    <p>elko elko</p>
+    <div id="baner">
+        <script>
+            function updateClock() { 
+                var clockElement = document.getElementById('zegar');
+                var now = new Date();
+                var timeString = now.toLocaleTimeString();
+                clockElement.textContent = timeString;
+            }  
+            setInterval(updateClock, 1000); 
+            var clockContainer = document.createElement('div');
+            clockContainer.id = 'zegar';
+            document.body.appendChild(clockContainer);
+            window.addEventListener('load', updateClock);
+        </script>
+        </div>
+        <div id="lewy"><p>TEST TEST TEST TEST TEST TEST</p></div>
+        <div id="glowny">
+            <p>Premier League to najwyższa klasa rozgrywkowa angielskiego systemu ligowego piłki nożnej. Liga została założona w 1992 roku, zastępując poprzednią strukturę, znanej jako Football League First Division. Przejęcie zarządzania rozgrywkami przez angielską federację piłkarską (FA) miało na celu zwiększenie atrakcyjności rozgrywek i ich komercyjnej wartości.</p>
+            <p>Pierwszy sezon Premier League rozpoczął się w sierpniu 1992 roku, a Manchester United, pod wodzą menedżera Alexa Fergusona, zdobył tytuł mistrza. Od tego czasu Premier League stała się jedną z najbardziej popularnych i najbardziej śledzonych lig piłkarskich na świecie.</p>
+            <p>Liga skupia się na otwartej rywalizacji, a poziom rozgrywek jest bardzo wyrównany, co sprawia, że każdy sezon jest pełen emocji i niespodzianek. Z czasem, Premier League stała się domem dla wielu największych gwiazd piłki nożnej na świecie, przyciągając uwagę globalnej publiczności.</p>
+            <p>Kluby takie jak Manchester United, Arsenal, Chelsea, Liverpool czy Manchester City zdobyły liczne tytuły mistrzowskie i budowały swoje sukcesy zarówno na krajowym, jak i międzynarodowym poziomie. Premier League to również liga, która przyciąga znaczne środki finansowe, co przekłada się na rozwój infrastruktury klubów i zwiększenie prestiżu angielskiego futbolu.</p>
+            <p>Od momentu swojego powstania, Premier League stała się jednym z głównych punktów zainteresowania światowej społeczności piłkarskiej, przyciągając setki milionów kibiców i umacniając swoją pozycję jako jedna z najważniejszych lig piłkarskich na świecie.</p>
+        </div>
+
+<div id="stopka">
+    <h1>Autorzy: Kacper Tomera, Mateusz Mucha</h1>
+</div>
+</div>
 </body>
 </html>
